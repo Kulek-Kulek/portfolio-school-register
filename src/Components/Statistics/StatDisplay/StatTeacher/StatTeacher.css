@@ -1,0 +1,35 @@
+.statistics-report__groups-list {
+    display: none;
+}
+
+.statistics-report__groups-list--active {
+    display: block;
+}
+
+.statistics-report__details-btn {
+    font-size: .6rem;
+    color: black;
+    padding: .5% 1%;
+    border-radius: 0;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.statistics-report__data-btn-float {
+    float: right;
+    margin-right: 3%;
+}
+
+.statistics-report__data-desc-past {
+    font-style: oblique;
+}
+
+.statistics-report__span-past {
+    margin-left: 1%;
+}
+
+@media(orientation:landscape) {
+    .statistics-report__details-btn {
+        font-size: .7rem;
+    }
+}

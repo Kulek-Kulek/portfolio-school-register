@@ -1,0 +1,36 @@
+.settings__rodo-student {
+    padding: 2%;
+    margin-left: 10%;
+    font-family: serif;
+    font-size: .8rem;
+}
+
+.settings__rodo-student-data {
+    margin: 1% 0;
+}
+
+.settings__rodo-student-data:first-of-type {
+    font-family: var(--main-font);
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 2.5%;
+}
+
+.settings__rodo-status {
+    color: var(--green-color);
+    background-color: var(--green-color);
+    color: #fff;
+    padding: .5% 5%;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+@media(min-width:1024px) {
+    .settings__rodo-student {
+        flex-basis: 40%;
+        padding: 2%;
+        margin-left: 5%;
+        font-family: serif;
+        font-size: 1rem;
+    }
+}

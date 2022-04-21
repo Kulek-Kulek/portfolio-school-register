@@ -1,0 +1,61 @@
+.student__end-term-grades {
+    margin-top: 2%;
+    padding: 1%;
+    background-color: rgb(247, 247, 247);
+}
+
+.student__end-term-grade-div {
+    display: flex;
+    justify-content: space-between;
+    font-size: .7rem;
+    margin: 3% 0;
+}
+
+.student__end-term-grade-div:first-of-type {
+    margin-top: 0;
+}
+
+.student__end-term-grade-desc {
+    flex-basis: 65%;
+}
+
+.student__end-term-grade {
+    flex-basis: 35%;
+    text-align: end;
+}
+
+.student__course-grade {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    margin-top: 3%;
+    padding: 1%;
+}
+
+@media(orientation:landscape) {
+    .student__end-term-grade-div {
+        font-size: .8rem;
+        margin: 2% 0;
+    }
+    .student__end-term-grades {
+        padding: 0;
+    }
+}
+
+@media(min-width:1024px) {
+    .student__end-term-grade-div {
+        padding: 1%;
+        font-size: .9rem;
+        margin: 0;
+    }
+    .student__end-term-grade-div:hover {
+        border-radius: 5px;
+        background-color: var(--minor-color);
+        color: #fff;
+        text-shadow: 1px 1px black;
+        font-weight: bold;
+    }
+    .student__course-grade:hover {
+        background-color: var(--green-color);
+    }
+}

@@ -1,0 +1,16 @@
+.orders__main {
+    margin: 12vh auto 0;
+    width: 90vw;
+}
+
+@media (orientation: landscape) {
+    .orders__main {
+        margin: 20vh auto 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .orders__main {
+        margin: 15vh auto 0;
+    }
+}

@@ -1,0 +1,56 @@
+.add-data-modal__schedlue {
+    text-align: center;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 1% 0;
+    font-family: var(--open-sans);
+    margin: 1% 0 2% 0;
+}
+
+.add-data-modal__checkbox-wrapper {
+    width: 100%;
+    color: var(--main-color);
+    font-size: .7rem;
+    font-family: var(--open-sans);
+    border: 1px solid var(--main-color);
+    margin-bottom: 1%;
+}
+
+.add-data-modal__checkbox-input-label {
+    width: 100%;
+}
+
+.add-data-modal__day-times {
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+}
+
+.add-data-modal__day-times:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.add-data-modal__from-input-wrapper, .add-data-modal__to-input-wrapper, .add-data-modal__checkbox-input-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-data-modal__from-input-wrapper, .add-data-modal__to-input-wrapper {
+    justify-content: space-around;
+}
+
+@media(min-width:1024px) {
+    .add-data-modal__schedlue {
+        font-size: 1rem;
+    }
+    .add-data-modal__checkbox-wrapper {
+        padding: 1% 3%;
+        font-size: 1rem;
+        margin-top: 1%;
+    }
+}

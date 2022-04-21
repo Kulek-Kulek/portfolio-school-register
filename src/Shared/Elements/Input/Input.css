@@ -1,0 +1,28 @@
+.add-data-modal__select {
+    width: 50%;
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: .8rem;
+}
+
+.add-data-modal__select-certyficate {
+    width: 100%;
+    padding: 0 .5%;
+}
+
+.input--invalid {
+    border: 2px solid red !important;
+}
+
+.error-text {
+    font-size: .7rem;
+    color: #A10606;
+    font-weight: bold;
+    font-family: var(--main-font);
+}
+
+@media(min-width:1024px) {
+    .add-data-modal__select {
+        font-size: 1rem;
+    }
+}

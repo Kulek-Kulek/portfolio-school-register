@@ -1,0 +1,25 @@
+.partners {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-color);
+    z-index: 1000;
+}
+
+.partners__warning {
+    color: #fff;
+    line-height: 100vh;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .partners__warning {
+        font-size: 2rem;
+    }
+}
+
+/* .partners__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */

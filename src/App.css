@@ -1,0 +1,20 @@
+:root {
+  --main-color: rgb(51, 34, 34);
+  --minor-color: #FFB606;
+  --main-font: 'Roboto Mono', monospace;
+  --open-sans: 'Open Sans', sans-serif;
+  --danger-color: #A10606;
+  --green-color: #2AC503;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear-settings {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0;
+}

@@ -1,0 +1,46 @@
+.send-SMS-div {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.send-SMS-input-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 3px;
+    width: auto;
+}
+
+.send-smsmessage__input {
+    order: -1;
+    margin-right: 5px;
+}
+
+.send-SMS-label {
+    font-size: .7rem;
+}
+
+.send-SMS-span {
+    display: none;
+}
+
+.send-SMS-span--active {
+    display: block;
+    font-size: .6rem;
+    color: var(--danger-color);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+@media(min-width: 1024px) {
+    .send-SMS-input-wrapper {
+        margin-bottom: 10px;
+    }
+    .send-SMS-label {
+        font-size: .85rem;
+    }
+    .send-SMS-span {
+        font-size: .85rem;
+        color: var(--danger-color);
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+}

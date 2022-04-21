@@ -1,0 +1,71 @@
+.admin-main__item {
+    flex-basis: 48%;
+    margin-bottom: 1%;
+}
+
+.admin-main__info-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-main__h2 {
+    font-size: .8rem;
+}
+
+.admin-main__h5 {
+    font-size: .5rem;
+}
+
+.admin-main__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-main__i {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+@media(orientation: landscape) {
+    .admin-main__item {
+        flex-basis: 32%;
+    }
+    .admin-main__h2 {
+        font-size: .75rem;
+    }
+    .admin-main__h5 {
+        font-size: .6rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .admin-main__item {
+        flex-basis: 30%;
+    }
+    .admin-main__h2 {
+        font-size: 1.1rem;
+    }
+    .admin-main__h5 {
+        font-size: .75rem;
+    }
+    .admin-main__i {
+        font-size: 1.1rem;
+        transform: translateX(150px);
+    }
+    .admin-main__item:hover .admin-main__i {
+        transform: translateX(0);
+        transition: .3s;
+    }
+    .admin-main__item:hover .admin-main__i:nth-child(2) {
+        transition-delay: .1s;
+    }
+    .admin-main__i:first-child:hover {
+        color: orange;
+    }
+    .admin-main__i:nth-child(2):hover {
+        color: green;
+    }
+    .admin-main__i:last-child:hover {
+        color: red;
+    }
+}

@@ -1,0 +1,16 @@
+.user-main {
+    margin: 12vh auto 0;
+    width: 92vw;
+}
+
+@media (orientation: landscape) {
+    .user-main {
+        margin: 20vh auto 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .user-main {
+        margin: 15vh auto 1%;
+    }
+}

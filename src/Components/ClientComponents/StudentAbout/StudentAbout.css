@@ -1,0 +1,345 @@
+.student__infotype-type {
+    display: none;
+}
+
+.student__infotype-type--active {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    border-top: none;
+}
+
+.student__general-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.student__profileImg-div {
+    margin: 4% auto 0;
+    width: 60px;
+    height: 75px;
+    box-shadow: 3px -.5px 5px rgb(78, 78, 78);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.student__profileImg-img {
+    width: 100%;
+    height: 100%;
+}
+
+.student__profileImg-div-user {
+    cursor: pointer;
+}
+
+.student__profile-img {
+    display: block;
+    margin: 2.5% auto;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+}
+
+.student__personal-data {
+    text-align: center;
+    flex-basis: 12%;
+    width: 100%;
+    padding: 2% 0;
+}
+
+.student__name {
+    font-size: .8rem;
+    margin-right: 1%;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.student__surname {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: var(--green-color);
+}
+
+.student__greeting {
+    letter-spacing: 2px;
+    font-size: .6rem;
+    margin-top: 2%;
+}
+
+.student__contact-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32%;
+}
+
+.student__contact-details {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0;
+    width: 90%;
+    font-size: .7rem;
+    margin: 0 auto 3%;
+}
+
+.student__span-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 0;
+}
+
+.teacher__zoom-link {
+    display: block;
+    width: 50%;
+    padding: 0;
+}
+
+.student__zoom-img {
+    display: block;
+    width: 35%;
+    height: 100%;
+}
+
+.student__upload-btn-div {
+    display: flex;
+    padding: 2% 0;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+}
+
+.student__button-update {
+    padding: 0 1%;
+    font-size: .7rem;
+    width: 40%;
+}
+
+.student__document-div {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.student__upload-file-btn {
+    width: 100%;
+}
+
+.student__invoice-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+    border-top: 1px solid var(--main-color);
+    margin-bottom: 2%;
+}
+
+.student__documents-list {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.student__invoice-heading {
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    background-color: #ddd;
+    color: var(--green-color);
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+}
+
+.student__invoice-span {
+    margin-left: 2%;
+    color: var(--main-color);
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.student__courses-item {
+    font-weight: normal;
+    font-size: .7rem;
+    padding: 1%;
+    font-weight: normal;
+}
+
+.student__invoice-item-div {
+    margin: 2% 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    font-size: .7rem;
+}
+
+.student__invoice-item-name {
+    flex-basis: 35%;
+    text-align: end;
+}
+
+.student__invoice-item {
+    flex-grow: 1;
+    margin-left: 2%;
+    font-weight: bold;
+}
+
+.student__invoice-item-div:first-of-type .student__invoice-item {
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.student__courses-list {
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 2% 5%;
+    background-color: rgb(247, 247, 247);
+}
+
+.student__courses {
+    background-color: yellow;
+    flex-grow: 1;
+}
+
+.student__add-course-button-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.student__add-course-button {
+    margin: 5% auto 2%;
+    width: 95%;
+    padding: 0;
+    font-size: .8rem;
+}
+
+.student__upload-btn {
+    margin: 0;
+    background-color: #fff;
+}
+
+.student__add-course-button:disabled:hover {
+    background-color: #fff;
+    color: var(--main-color);
+    cursor: none;
+}
+
+.student__rodo-heading {
+    text-align: center;
+    font-family: var(--main-font);
+    text-transform: capitalize;
+    background-color: var(--green-color);
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 1% 0;
+    border-top: 1px solid black;
+}
+
+@media(min-width:1024px) {
+    .student__profileImg-div {
+        margin: 3% auto;
+        width: 170px;
+        height: 200px;
+    }
+    .student__name {
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+    .student__surname {
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+    }
+    .student__greeting {
+        letter-spacing: 2px;
+        font-size: .9rem;
+        margin-top: 1%;
+    }
+    .student__contact-details {
+        padding: 0;
+        width: 60%;
+        font-size: 1rem;
+    }
+    .student__span-data {
+        justify-content: space-between;
+    }
+    .student__zoom-img {
+        width: 20%;
+    }
+    .student__invoice-heading {
+        font-size: 1.6rem;
+        letter-spacing: 3px;
+        margin-bottom: 1%;
+    }
+    .student__invoice-span {
+        margin-left: 0;
+        color: var(--main-color);
+        font-size: 1.3rem;
+    }
+    .student__invoice-item-div {
+        margin: 1% 0;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .student__invoice-item {
+        flex-grow: 1;
+        margin-left: 0.5%;
+    }
+    .student__invoice-item-div:first-of-type .student__invoice-item {
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+        color: var(--green-color);
+    }
+    .student__button-update {
+        padding: 0 1%;
+        font-size: .9rem;
+        transition: .3s;
+        width: 30%;
+    }
+    .student__button-update:hover {
+        background-color: var(--minor-color);
+        color: #fff;
+        transition: .3s;
+    }
+    .student__upload-btn-div {
+        padding: 0%;
+        justify-content: flex-start;
+    }
+    .student__courses-list {
+        font-size: 1.1rem;
+    }
+    .student__courses-item {
+        font-size: 1rem;
+    }
+    .student__courses {
+        background-color: yellow;
+        flex-grow: 1;
+    }
+    .student__add-course-button-a {
+        justify-content: flex-start;
+    }
+    .student__add-course-button {
+        margin: 1%;
+        width: 25%;
+        padding: .5%;
+        font-size: 1rem;
+        letter-spacing: 5px;
+    }
+    .student__add-course-button:hover {
+        background-color: var(--green-color);
+        color: #fff;
+        transition: .3s;
+    }
+    .student__rodo-heading {
+        font-size: 1.4rem
+    }
+    ;
+}

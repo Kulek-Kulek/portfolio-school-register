@@ -1,0 +1,40 @@
+.settings__bankaccount-settings {
+    flex-basis: 55%;
+}
+
+.settings__set-p-bank-account {
+    width: auto;
+}
+
+.settings__set-span-bankaccount {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+@media(orientation:landscape) {
+    .settings__bankaccount-settings {
+        flex-basis: 80%;
+    }
+    .settings__set-data-bankaccount {
+        padding-bottom: 2%;
+    }
+    .settings__set-span-bankaccount {
+        letter-spacing: 3px;
+    }
+}
+
+@media(min-width:1024px) {
+    .settings__bankaccount-settings {
+        flex-basis: 60%;
+    }
+    .settings__set-data-bankaccount {
+        justify-content: flex-start;
+        padding-bottom: 0;
+    }
+    .settings__set-span-bankaccount {
+        flex-grow: 1;
+        font-size: 1.1rem;
+        letter-spacing: 15px;
+        text-align: center;
+    }
+}

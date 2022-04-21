@@ -1,0 +1,218 @@
+.settings__input-div {
+    display: flex;
+    flex-direction: column;
+    margin: 4% 0;
+}
+
+.settings__settings {
+    flex-basis: 65%;
+    display: flex;
+    /* height: 60vh; */
+    flex-direction: column;
+    padding: 0 2% 5% 2%;
+    border-bottom: 1px solid var(--green-color);
+}
+
+.settings__inputs-form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.settings__title {
+    font-size: 1rem;
+    background-color: var(--green-color);
+    text-align: center;
+    padding: 3%;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px black;
+}
+
+.settings__desc {
+    font-size: .65rem;
+    margin: 2% 0;
+    padding: 1%;
+    text-align: right;
+    background-color: #ddd;
+    box-shadow: 1px 2px 5px black;
+}
+
+.settings__label {
+    padding: .5% 0;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.settings__input {
+    font-size: 1.2rem;
+    padding: 1%;
+}
+
+.settings__current {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5% 2%;
+}
+
+.settings__btn {
+    margin: 10% 0 5% 0;
+    align-self: center;
+    width: 70%;
+}
+
+.settings__btn:disabled {
+    cursor: auto;
+    width: 50%;
+    font-size: .6rem;
+}
+
+.settings__btn:disabled:hover {
+    color: #000;
+}
+
+.settings__set-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 2% 0;
+}
+
+.settings__set-p {
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+}
+
+.settings__set-span {
+    /* margin-left: 1%; */
+    margin-top: 2%;
+    color: #fff;
+    padding: 2%;
+    border-radius: 2px;
+    background-color: var(--main-color);
+}
+
+@media(orientation: landscape) {
+    .settings__inputs-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .settings__settings {
+        padding-bottom: 2%;
+    }
+    .settings__input-div {
+        flex-basis: 45%;
+        margin: 1.5% 0;
+    }
+    .settings__input-div:last-of-type {
+        /* margin: 3% 0; */
+        flex-basis: 100%;
+    }
+    .settings__desc {
+        font-size: .7rem;
+        margin: 1% 0;
+    }
+    .settings__label {
+        padding: .5% 0;
+        font-size: .7em;
+    }
+    .settings__input {
+        font-size: .8rem;
+    }
+    .settings__btn {
+        margin: 0 auto;
+        flex-basis: 50%;
+        font-size: .8rem;
+        padding: 0.5% 0;
+    }
+    .settings__btn:disabled {
+        flex-basis: 35%;
+    }
+    .settings__set-title {
+        font-size: .8rem;
+        padding: 1% 0;
+    }
+    .settings__set-data {
+        padding: 2% 0;
+        flex-basis: 30%;
+    }
+    .settings__set-p {
+        font-size: .7rem;
+        padding: 1% 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .settings__current {
+        padding: 2% 0;
+    }
+    .settings__set-span {
+        margin-top: 0;
+    }
+}
+
+@media(min-width:1024px) {
+    .settings__settings {
+        flex-basis: 75%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3%;
+    }
+    .settings__inputs-form {
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+    .settings__title {
+        font-size: 1.4rem;
+        padding: 1%;
+        letter-spacing: 3px;
+    }
+    .settings__desc {
+        font-size: .9rem;
+        padding: 1%;
+    }
+    .settings__label {
+        padding: .5% 0;
+        font-size: .9rem;
+    }
+    .settings__input {
+        padding: .5%;
+        font-size: 1rem;
+    }
+    .settings__btn {
+        margin: 0 auto;
+        width: 35%;
+        font-size: 1.1rem;
+    }
+    .settings__btn:disabled {
+        width: 25%;
+    }
+    .settings__set-title {
+        font-size: 1.1rem;
+        padding: 1% 0;
+    }
+    .settings__set-data {
+        flex-direction: row;
+        padding: 4% 0;
+    }
+    .settings__set-p {
+        font-size: .9rem;
+        padding: 0 2%;
+        flex-basis: 25%;
+    }
+    .settings__current {
+        padding: 2% 0;
+        flex-grow: unset;
+    }
+    .settings__set-span {
+        padding: 1%;
+    }
+}

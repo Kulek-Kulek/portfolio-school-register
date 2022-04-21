@@ -1,0 +1,173 @@
+.teacher_groups-li {
+    flex-basis: 90%;
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+.admin-main__content-loadedTeacher {
+    height: 335px;
+}
+
+.pop-up-modal__createLesson-wrapper {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+}
+
+.add-data-modal__group-createLesson-label {
+    /* flex-basis: 100%; */
+    background-color: #1F1C21;
+    color: #fff;
+    font-family: var(--main-font);
+    padding: .3% 2%;
+    text-shadow: 1px 1px black;
+}
+
+.createLessonTextarea {
+    flex-basis: 100%;
+    padding: 1%;
+}
+
+.form__checklist {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__inputWrapperClass-checkbox-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2%;
+    margin: .5% 0;
+}
+
+.form__inputWrapperClass-checkbox-div:hover {
+    background-color: var(--green-color);
+    color: #fff;
+}
+
+.form__checklist-span {
+    background-color: var(--main-color);
+    color: var(--minor-color);
+    ;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: .9rem;
+    letter-spacing: 3px;
+    padding: 2%;
+}
+
+.form__checkbox-label {
+    flex-basis: 100%;
+}
+
+.teacher__groups-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    flex-basis: 20%;
+}
+
+.teacher__groups-button {
+    background-color: #fff;
+    flex-basis: 60%;
+    color: var(--minor-color);
+    padding: 0;
+    font-size: .8rem;
+    padding: 0 .5%;
+}
+
+.teacher__groups-see-details, .teacher__create-grade, .teacher__send-email {
+    font-size: 1.1rem;
+    color: var(--green-color);
+}
+
+.teacher__create-grade {
+    color: var(--minor-color);
+}
+
+.teacher__send-email {
+    color: rgb(235, 8, 235);
+}
+
+@media(orientation:landscape) {
+    .teacher_groups-li {
+        flex-basis: 45%;
+        margin: 0;
+        margin-bottom: 3%;
+    }
+    .teacher__groups-button {
+        font-size: .7rem;
+    }
+    .createLessonTextarea {
+        padding: .5%;
+    }
+}
+
+@media(orientation: landscape) {
+    .admin-main__content-loadedTeacher {
+        height: 335px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .admin-main__content-loadedTeacher {
+        height: 400px;
+    }
+    .teacher_groups-li {
+        flex-basis: 32%;
+    }
+    .teacher__groups-button-wrapper {
+        width: 70%;
+    }
+    .teacher__groups-button {
+        transform: translate(200%);
+        font-size: .9rem;
+        padding: .5%;
+    }
+    .teacher__groups-button:hover {
+        color: #fff;
+        background-color: var(--minor-color);
+    }
+    .admin-main__content:hover .teacher__groups-button {
+        transform: translate(0);
+        transition: .3s;
+    }
+    .teacher__groups-see-details, .teacher__create-grade, .teacher__send-email {
+        font-size: 1.3rem;
+        transform: translate(80vw);
+    }
+    .teacher__create-grade:hover {
+        cursor: pointer;
+        color: #a17305;
+    }
+    .teacher__send-email:hover {
+        cursor: pointer;
+        color: rgb(161, 15, 161);
+    }
+    .teacher__groups-see-details:hover {
+        cursor: pointer;
+        color: green;
+    }
+    .admin-main__content:hover .teacher__groups-see-details {
+        transform: translate(0);
+        transition: .3s;
+    }
+    .admin-main__content:hover .teacher__send-email {
+        transform: translate(0);
+        transition: .3s;
+    }
+    .admin-main__content:hover .teacher__create-grade {
+        transform: translate(0);
+        transition: .3s;
+    }
+    .form__checklist-span {
+        font-size: 1rem;
+    }
+}

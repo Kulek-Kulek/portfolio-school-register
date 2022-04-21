@@ -1,0 +1,315 @@
+.statistics-report {
+    padding-bottom: 5%;
+}
+
+.statistics-report__report-heading {
+    text-align: center;
+    font-family: var(--main-font);
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: .9rem;
+    padding: 1% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics-report__report-group-name {
+    font-size: 1.1rem;
+    color: var(--green-color);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: var(--main-font);
+}
+
+.statistics-report__group-teacher {
+    margin-top: 5%;
+    font-size: .85rem;
+    padding: 0 1%;
+}
+
+.statistics-report__group-teacher-name {
+    font-weight: bold;
+    font-size: .9rem;
+    color: var(--green-color);
+    text-decoration: none;
+}
+
+.statistics-report__group-teacher-name:hover {
+    text-decoration: underline;
+}
+
+.stat-repoert__date-range {
+    padding: 0 1%;
+    margin-bottom: 5%;
+}
+
+.statistics-report__report-sumup {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    padding: 0 1%;
+    font-size: .8rem;
+    margin-bottom: 5%;
+}
+
+.statistics-report__ol-heading {
+    text-align: center;
+    font-size: .9rem;
+    margin-top: 5%;
+    background-color: var(--main-color);
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 1% 0;
+    font-weight: normal;
+}
+
+.statistics-report__ol {
+    margin: 1% 0 0 5%;
+    font-weight: bold;
+}
+
+.statistics-report__topics-list {
+    display: none;
+}
+
+.statistics-report__topics-list--acctive {
+    display: block;
+}
+
+.statistics-report__data-heading {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    line-height: 1rem;
+    padding: 1% 0;
+}
+
+.statistics-report__teacher-groups-by-length {
+    font-weight: bold;
+    /* margin-left: 2%; */
+    padding: 1% 0 2% 6%;
+}
+
+.statistics-report__teacher-groups-by-length:nth-last-of-type(odd) {
+    background-color: rgb(241, 241, 241);
+}
+
+.statistics-report__lesson-by-length {
+    margin-top: 2%;
+}
+
+.statistics-report__data-item {
+    width: 100%;
+    font-size: .8rem;
+    padding: 1% 2%;
+    margin: 3% 0;
+}
+
+.statistics-report__data-item:first-of-type {
+    margin: 0;
+}
+
+.statistics-report__data-div {
+    display: flex;
+    margin-top: 3%;
+    overflow: hidden;
+}
+
+.statistics-report__data-div-block {
+    display: block;
+}
+
+.statistics-report__data-div-column {
+    flex-direction: column;
+}
+
+.statistics-report__data-div:first-of-type {
+    margin-top: 1%;
+}
+
+.statistics-report__data-desc {
+    flex-grow: 1;
+    font-size: .7rem;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.statistics-report__data-desc:first-of-type {
+    margin-top: 1%;
+}
+
+/* .statistics-report__data-desc:nth-last-of-type(even) {
+    background-color: #fff;
+} */
+
+.statistics-report__data-heading-details {
+    margin-left: 1%;
+    color: #000;
+    font-size: .6rem;
+    letter-spacing: .5px;
+}
+
+.statistics-report__data-item:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+.statistics-report__topic-span {
+    flex-grow: 1;
+}
+
+.statistics-report__data-span {
+    color: var(--green-color);
+    font-size: .85rem;
+    text-decoration: none;
+}
+
+.statistics-report__total-hours {
+    display: block;
+    text-align: center;
+    margin: 4% 0;
+    background-color: var(--main-color);
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: var(--main-font);
+    padding: 1.5%;
+    font-size: .6rem;
+}
+
+.statistics-report__data-link {
+    text-decoration: none;
+    color: var(--green-color);
+}
+
+.statistics-report__data-link:hover {
+    text-decoration: underline;
+}
+
+.statistics-report__data-link-teacher {
+    margin-left: 1.5%;
+}
+
+.statistics-report__data-tel {
+    color: #000;
+    margin-left: 1%;
+}
+
+.statistics-report__topic-date {
+    font-weight: normal;
+    flex-basis: 70%;
+    font-size: .7rem;
+}
+
+.statistics-report__topic-date-margin {
+    margin-left: .5%;
+}
+
+.report-dispaly-none {
+    display: none;
+}
+
+.report-dispaly-none--active {
+    display: block;
+}
+
+.statistics-report__doc-overdue {
+    letter-spacing: normal;
+    /* text-transform: lowercase; */
+}
+
+@media(orientation: landscape) {
+    /* .statistics-report__report-sumup {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2%;
+    } */
+    .stat-repoert__date-range {
+        margin-bottom: 2%;
+    }
+    .statistics-report__ol {
+        margin-left: 1%;
+        border: 1px solid black;
+    }
+    .statistics-report__data-div {
+        margin-top: 1%;
+    }
+    .statistics-report__topic-date {
+        flex-basis: 85%;
+    }
+    .statistics-report__data-link-teacher {
+        margin-left: .5%;
+    }
+    .statistics-report__data-desc {
+        margin-top: .5%;
+    }
+    .statistics-report__data-desc:first-of-type {
+        margin-top: 0;
+    }
+    .statistics-report__teacher-groups-by-length {
+        padding: 1% 0 2% 4%;
+    }
+    .statistics-report__teacher-groups-by-length:nth-last-of-type(odd) {
+        background-color: rgb(241, 241, 241);
+    }
+    .statistics-report__lesson-by-length {
+        margin-top: 2%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .statistics-report__report-heading {
+        font-size: 1.2rem;
+        padding: .8% 0;
+        letter-spacing: 1px;
+    }
+    .statistics-report__report-group-name {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        /* padding: 3% 1%; */
+    }
+    .statistics-report__group-teacher {
+        margin-top: 2%;
+        font-size: 1.1rem;
+    }
+    .statistics-report__group-teacher-name {
+        font-size: 1.2rem;
+    }
+    .statistics-report__data-span {
+        font-size: 1.1rem;
+    }
+    .statistics-report__report-sumup {
+        font-size: 1rem;
+        margin-bottom: 1%;
+    }
+    .statistics-report__ol {
+        margin: 2%;
+        padding: 0 3%;
+    }
+    .statistics-report__ol-heading {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        margin-bottom: 1%;
+    }
+    .statistics-report__data-heading {
+        font-size: 1rem;
+    }
+    .statistics-report__data-heading-details {
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
+    .statistics-report__data-item {
+        font-size: 1rem;
+        padding: 1% 0.5%;
+    }
+    .statistics-report__data-desc, .statistics-report__topic-date {
+        font-size: .9rem;
+    }
+    .statistics-report__teacher-groups-by-length {
+        padding: 1% 0 1% 2%;
+    }
+    .statistics-report__total-hours {
+        display: inline-block;
+        margin: 2% 0;
+        padding: .5% 1%;
+        font-size: .9rem;
+    }
+}

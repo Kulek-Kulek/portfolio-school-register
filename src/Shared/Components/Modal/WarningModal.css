@@ -1,0 +1,83 @@
+.warrning-modal--active {
+    display: flex;
+    height: auto;
+}
+
+.warrning-modal_message {
+    font-size: .9rem;
+    padding: 3%;
+    background-color: #ddd;
+}
+
+.warrning-modal__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 3% 0;
+    padding: 1%;
+    background-color: #ddd;
+}
+
+.error-modal__buttons-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.warrning-modal__delete {
+    background-color: var(--danger-color);
+}
+
+.warrning-modal__delete:disabled {
+    background-color: #ddd;
+    width: 20%;
+}
+
+.warrning-modal__delete:disabled:hover {
+    color: #fff;
+    cursor: auto;
+}
+
+.warrning-modal__cancel {
+    width: 30%;
+    font-size: .9rem;
+    background-color: var(--main-color);
+}
+
+.spinner-centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media(orientation: landscape) {
+    .warrning-modal--active {
+        top: 50%;
+    }
+    .warrning-modal_message {
+        padding: 1% 3%;
+    }
+    .warrning-modal__input-wrapper {
+        flex-direction: row;
+    }
+    .warrning-modal__input {
+        flex-grow: 1;
+        margin-left: 2%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .warrning-modal--active {
+        top: 35%;
+    }
+    .warrning-modal_message {
+        padding: 1%;
+        font-size: 1.1rem;
+    }
+    .warrning-modal__delete {
+        width: 50%;
+    }
+    .warrning-modal__cancel {
+        width: 20%;
+    }
+}

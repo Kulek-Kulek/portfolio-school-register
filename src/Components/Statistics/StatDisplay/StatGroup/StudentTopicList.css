@@ -1,0 +1,29 @@
+.statistics__topic-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics__topic-index {
+    display: flex;
+    font-size: .7rem;
+    margin-top: 2%;
+}
+
+.statistics__topic-details {
+    font-weight: normal;
+    margin-left: 1%;
+    flex-basis: 60%;
+    margin-right: 2%;
+}
+
+@media(orientation:landscape) {
+    .statistics__topic-details {
+        flex-basis: 75%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .statistics__topic-index {
+        font-size: .9rem;
+    }
+}

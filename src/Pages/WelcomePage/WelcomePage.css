@@ -1,0 +1,17 @@
+.welcome__main {
+    position: relative;
+    background-image: url('../../images/welcomepage/welcome.jpg');
+    min-height: 100vh;
+    background-position: center 30%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.welcome__welcome-log {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: var(--minor-color);
+}

@@ -1,0 +1,230 @@
+.admin-main__item {
+    flex-basis: 100%;
+    margin-bottom: 3%;
+}
+
+.admin-main__main-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.admin-main__info-div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.admin-main__h2 {
+    font-size: 1rem;
+    color: var(--minor-color);
+    text-shadow: 1px 1px black;
+}
+
+.admin-main__p {
+    font-size: .7rem;
+    color: #fff;
+}
+
+.admin-main__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+}
+
+.admin-main__content-student {
+    height: 190px
+}
+
+.admin-main__content-group, .admin-main__content-teacher {
+    height: 360px;
+}
+
+.admin-main__content-orders {
+    height: 250px;
+}
+
+.admin-main__i-wrapper {
+    align-self: flex-end;
+    width: 75%;
+    flex-basis: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: .9rem;
+}
+
+.admin-main__i {
+    color: var(--minor-color);
+    cursor: pointer;
+}
+
+.admin-main__populated-data-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.admin-main__last3topics-number {
+    flex-basis: 10%;
+    margin-right: 2px;
+}
+
+.admin-main__last3topics-date {
+    color: #fff;
+    font-size: .8rem;
+    margin-left: 7px;
+}
+
+.admin-main__last3topics-div {
+    display: flex;
+    justify-content: space-between;
+    padding: .5%;
+    border-bottom: 1px solid black;
+}
+
+.admin-main__populated-data {
+    color: #fff;
+    font-size: .8rem;
+    width: 100%;
+}
+
+.admin-main__i-user {
+    color: var(--minor-color);
+}
+
+.admin-main__i-eye {
+    color: rgb(0, 47, 255);
+    font-size: 1.1rem;
+}
+
+.admin-main__i-pen {
+    color: rgb(15, 216, 15);
+}
+
+.admin-main__i-archive {
+    color: rgb(13, 221, 228);
+}
+
+.admin-main__i-envelope {
+    color: rgb(235, 8, 235);
+}
+
+.admin-main__i-trash {
+    color: red;
+}
+
+.admin-main__i-invoice {
+    color: aliceblue;
+}
+
+.card-hide {
+    display: none;
+}
+
+@media(orientation: landscape) {
+    .admin-main__content {
+        height: 180px;
+    }
+    .admin-main__i-wrapper {
+        margin: 0 5px 5px 0;
+    }
+    .admin-main__content-group, .admin-main__content-teacher {
+        height: 340px;
+    }
+    .admin-main__content-student {
+        height: 180px
+    }
+    .admin-main__content-orders {
+        height: 200px;
+    }
+    .admin-main__item {
+        flex-basis: 48%;
+    }
+    .admin-main__h2 {
+        font-size: .75rem;
+    }
+    .admin-main__p {
+        font-size: .6rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .admin-main__content {
+        height: 220px;
+    }
+    .admin-main__content-group {
+        height: 400px;
+    }
+    .admin-main__content-teacher {
+        height: 400px;
+    }
+    .admin-main__content-student {
+        height: 230px
+    }
+    .admin-main__content-orders {
+        height: 270px;
+    }
+    .admin-main__item {
+        flex-basis: 30%;
+    }
+    .admin-main__h2 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    .admin-main__p {
+        font-size: .9rem;
+        letter-spacing: 1px;
+    }
+    .admin-main__populated-data {
+        font-size: .9rem;
+    }
+    .admin-main__i {
+        font-size: 1.1rem;
+        transform: translateX(350px);
+    }
+    .admin-main__item:hover .admin-main__i {
+        transform: translateX(0);
+        transition: .2s;
+    }
+    .admin-main__item:hover .admin-main__i:first-child {
+        transition-delay: .12s;
+    }
+    .admin-main__item:hover .admin-main__i:nth-child(2) {
+        transition-delay: .1s;
+    }
+    .admin-main__i-user:hover {
+        color: rgb(131, 94, 24);
+        transition: .1s;
+    }
+    .admin-main__i-pen:hover {
+        color: rgb(19, 94, 19);
+        transition: .1s;
+    }
+    .admin-main__i-envelope:hover {
+        color: rgb(161, 15, 161);
+        transition: .1s;
+    }
+    .admin-main__i-trash:hover {
+        color: var(--danger-color);
+        transition: .1s;
+    }
+    .admin-main__i-eye {
+        margin-top: 5px;
+        font-size: 1.3rem;
+    }
+    .admin-main__i-eye:hover {
+        color: rgb(40, 40, 155);
+    }
+    .admin-main__i-invoice:hover {
+        color: rgb(129, 143, 155);
+    }
+    .admin-main__i-archive:hover {
+        color: rgb(32, 134, 138);
+    }
+    .admin-main__last3topics-number {
+        flex-basis: 6%;
+        margin-right: 4px;
+    }
+}

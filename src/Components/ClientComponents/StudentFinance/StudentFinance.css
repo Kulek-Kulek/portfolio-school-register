@@ -1,0 +1,61 @@
+.finance__account-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70px;
+    margin: auto auto;
+    align-items: center;
+    background-color: #ddd;
+    padding: 3% 0;
+}
+
+.finance__payment-details:last-child {
+    letter-spacing: 2px;
+}
+
+.finance__invoice-heading {
+    text-align: center;
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 1% 0;
+}
+
+.finance__invoice-bankaccount {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid black;
+    font-size: .75rem;
+}
+
+.finance__invoice-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+
+@media(orientation:landscape) {
+    .finance__account-div {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .finance__payment-details:last-child {
+        margin-left: 5px;
+    }
+}
+
+@media(min-width:1024px) {
+    .finance__payment-details {
+        font-size: 1.2rem;
+    }
+    .finance__invoice-list {
+        padding: 2%;
+    }
+    .finance__invoice-heading {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+    }
+    .finance__invoice-bankaccount {
+        font-size: 1.1rem;
+    }
+}

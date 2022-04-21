@@ -1,0 +1,36 @@
+.side__drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translate(-101%, -101%);
+  background-color: #ccc;
+  height: 80vh;
+  width: 70%;
+  box-shadow: 1px 3px 6px rgba(51, 34, 34, 0.6);
+  border-bottom-right-radius: 10px;
+  z-index: 100;
+  transition: .2s linear;
+}
+
+.side__drawer--active {
+  transform: translate(0, 0);
+  transition: .2s linear;
+  z-index: 1000;
+}
+
+.side__drawer--archive {
+  background-color: rgb(44, 46, 150);
+}
+
+@media (orientation: landscape) {
+  .side__drawer {
+    height: 100vh;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .side__drawer {
+    display: none;
+  }
+}

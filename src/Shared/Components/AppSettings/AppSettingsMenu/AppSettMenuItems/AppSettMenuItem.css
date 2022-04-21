@@ -1,0 +1,22 @@
+.settings__li {
+    /* background-color: red; */
+    width: 100%;
+    text-align: center;
+    padding: 5% 0;
+    letter-spacing: 1px;
+}
+
+.settings__li:hover {
+    color: rgb(190, 186, 186);
+    cursor: pointer;
+}
+
+.settings__li--active {
+    color: var(--minor-color);
+    cursor: none;
+}
+
+.settings__li--active:hover {
+    color: var(--minor-color);
+    cursor: auto;
+}

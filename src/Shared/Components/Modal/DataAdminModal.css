@@ -1,0 +1,368 @@
+.add-data-modal {
+    position: absolute;
+    left: 50%;
+    top: -45%;
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: bottom bottom;
+    transition: .2s;
+    z-index: 700;
+}
+
+.add-data-modal__add-new-student {
+    position: absolute;
+    top: 75%;
+}
+
+.add-data-modal__sendEmailMessage {
+    top: 53%;
+}
+
+/* .add-data-modal__updateGroup {
+    top: 55%;
+} */
+
+.add-data-modal__groups {
+    top: 50%;
+}
+
+.add-data-modal__teachers {
+    top: 40%;
+}
+
+.add-data-modal__addStudentToGroup {
+    top: 30%;
+}
+
+.add-data-modal__createTermEndGrade {
+    top: 40%;
+}
+
+.add-data-modal__createLesson {
+    position: fixed;
+    top: 50%;
+}
+
+.add-data-modal--active {
+    transform: translate(-50%, -50%) scale(1);
+    transform-origin: top top;
+    /* top: 83%; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem auto;
+    padding: .5rem .5rem .5rem .5rem;
+    border: 1px solid black;
+    width: 90%;
+    background-color: #fff;
+    transition: .2s;
+}
+
+.add-data-modal-top {
+    top: 50%;
+}
+
+.add-data-modal__heading {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    background-image: url('../../../images/modal/red-pens.jpg');
+    background-position: center 65%;
+    background-size: cover;
+    height: 50px;
+    margin-bottom: 2%;
+}
+
+.add-data-modal__logo {
+    margin: 0 0 2% 4%;
+}
+
+.add-data-modal__group-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.add-data-modal__group-input-row:first-child {
+    flex-basis: 100%;
+}
+
+.add-data-modal__group-input-row {
+    flex-basis: 48%;
+}
+
+.add-data-modal__group-input-select {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-data-modal__group-input-select-label {
+    color: #fff;
+    margin-bottom: 2%;
+    background-color: #2A2426;
+    padding: 1%;
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+    font-size: .85rem;
+}
+
+.add-data-modal__group-input-column {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-data-modal__input {
+    height: 1.5rem;
+    padding: .5rem .3rem;
+    font-size: 1rem;
+    margin-bottom: .3rem;
+    border: 1px solid var(--main-color);
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    font-size: .6rem;
+    color: black;
+}
+
+::-moz-placeholder {
+    font-size: .6rem;
+    color: black;
+}
+
+:-ms-input-placeholder {
+    font-size: .6rem;
+    color: black;
+}
+
+::-ms-input-placeholder {
+    font-size: .6rem;
+    color: black;
+}
+
+::placeholder {
+    font-size: .6rem;
+    color: black;
+}
+
+.add-data-modal__buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-data-modal__button {
+    width: 80%;
+    margin-top: .5rem;
+    background-color: var(--main-color);
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+    font-size: .8rem;
+    color: #fff;
+    padding: 1% 3%;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.add-data-modal__button:nth-of-type(2) {
+    background-color: #A10606;
+    width: 35%;
+}
+
+.add-data-modal__button:disabled {
+    background-color: #fff;
+    color: black;
+    width: 60%;
+    font-size: .6rem;
+    cursor: auto;
+}
+
+.pop-up-modal__invoiceupload-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.pop-up-modal__invoice-upload-label {
+    flex-basis: 100%;
+    margin-bottom: 3%;
+    font-size: 1rem;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 1%;
+}
+
+.pop-up-modal__invoice-upload {
+    margin-bottom: 2%;
+}
+
+.invoice-data-input-wrapper {
+    display: none;
+}
+
+.invoice-data-checkbox-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-basis: 100%;
+    margin: 1% 0;
+    font-size: .8rem;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 1%;
+    text-align: center;
+}
+
+.invoice-data-input-wrapper--active {
+    display: flex;
+}
+
+@media(orientation: landscape) {
+    .add-data-modal {
+        top: 155%;
+    }
+    .add-data-modal__logo {
+        margin: 0 0 3% 4%;
+    }
+    .add-data-modal__heading {
+        height: 70px;
+    }
+    .invoice-data-checkbox-wrapper {
+        font-size: .8rem;
+        justify-content: flex-start;
+        align-items: center;
+        padding: .5%;
+    }
+    .invoice-data-checkbox-label {
+        margin-right: 2%;
+    }
+    .add-data-modal__add-new-student {
+        top: 135%;
+    }
+    .add-data-modal__sendEmailMessage {
+        position: absolute;
+        top: 100%;
+    }
+    .add-data-modal__addStudentToGroup {
+        top: 50%;
+    }
+    .add-data-modal__groups {
+        top: 90%;
+    }
+    .add-data-modal-top {
+        top: 90%;
+    }
+    .add-data-modal__teachers {
+        top: 75%;
+    }
+    .add-data-modal__createTermEndGrade {
+        top: 45%;
+    }
+    .add-data-modal__createLesson {
+        position: absolute;
+    }
+}
+
+@media (min-width: 1024px) {
+    ::-webkit-input-placeholder {
+        font-size: .8rem;
+    }
+    ::-moz-placeholder {
+        font-size: .8rem;
+    }
+    :-ms-input-placeholder {
+        font-size: .8rem;
+    }
+    ::-ms-input-placeholder {
+        font-size: .8rem;
+    }
+    ::placeholder {
+        font-size: .8rem;
+    }
+    .add-data-modal {
+        top: 80%;
+        padding: .8rem;
+        width: 65%;
+        z-index: 700;
+    }
+    .add-data-modal__add-new-student {
+        top: 75%;
+    }
+    .add-data-modal__sendEmailMessage {
+        top: 55%;
+    }
+    .add-data-modal__groups {
+        top: 50%;
+    }
+    .add-data-modal__addStudentToGroup {
+        top: 35%;
+    }
+    .add-data-modal__createTermEndGrade {
+        top: 35%;
+    }
+    .add-data-modal__teachers {
+        top: 45%;
+    }
+    .add-data-modal__heading {
+        height: 90px;
+    }
+    .add-data-modal__logo {
+        margin: 0 0 2% 4%;
+        font-size: 3.2rem;
+    }
+    .add-data-modal__logo-pink {
+        font-size: 3.5rem;
+    }
+    .add-data-modal__input {
+        padding: .8rem .3rem;
+    }
+    .add-data-modal__buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .add-data-modal__button {
+        padding: .3% 3%;
+        font-size: .9rem;
+        width: 45%;
+    }
+    .add-data-modal__group-input-select-label {
+        font-size: 1rem;
+    }
+    .add-data-modal__button:disabled {
+        width: 35%;
+        font-size: .8rem;
+    }
+    .add-data-modal__button:nth-child(2) {
+        order: -1;
+        width: 20%;
+    }
+    .add-data-modal__button:hover {
+        background-color: #fff;
+        color: var(--main-color);
+    }
+    .add-data-modal__button:nth-of-type(2):hover {
+        background-color: #fff;
+        color: #A10606;
+        border: 1px solid #A10606;
+    }
+    .invoice-data-checkbox-wrapper {
+        font-size: .9rem;
+        justify-content: flex-start;
+        letter-spacing: 1px;
+    }
+    .add-data-modal-top {
+        top: 50%;
+    }
+    .add-data-modal__createLesson {
+        position: fixed;
+        top: 50%;
+    }
+}

@@ -1,0 +1,36 @@
+.teacher__finance-button-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher__stat-btn-link {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    margin-right: 1%;
+}
+
+.teacher__upload-file-btn {
+    flex-basis: 40%;
+    margin: 4% 2%;
+    font-size: .7rem;
+}
+
+.teacher__stat-btn {
+    flex-basis: 100%;
+}
+
+@media(min-width: 1024px) {
+    .teacher__upload-file-btn {
+        font-size: 1rem;
+        margin: 2%;
+        transition: .3s;
+    }
+    .teacher__upload-file-btn:hover {
+        color: #fff;
+        background-color: var(--green-color);
+        transition: .3s;
+    }
+}

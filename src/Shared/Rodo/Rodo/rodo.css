@@ -1,0 +1,15 @@
+.student__rodo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 0;
+}
+
+@media(orientation:landscape) {
+    .student__rodo-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        justify-content: space-around;
+    }
+}

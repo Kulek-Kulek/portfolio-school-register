@@ -1,0 +1,16 @@
+.students__main {
+    margin: 12vh auto 0;
+    width: 90vw;
+}
+
+@media (orientation: landscape) {
+    .students__main {
+        margin: 20vh auto 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .students__main {
+        margin: 15vh auto 0;
+    }
+}

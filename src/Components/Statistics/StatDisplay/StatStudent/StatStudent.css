@@ -1,0 +1,45 @@
+.statistics-report__group-teacher-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    padding: 1%;
+    border: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.statistics-report__range-dates {
+    display: block;
+    font-size: .7rem;
+    margin-bottom: 5%;
+}
+
+.statistics-report__ol-none-border {
+    border: none;
+}
+
+.statistics-report__piggy-bank {
+    margin-left: 2%;
+    color: var(--green-color);
+    padding: 1%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+@media(orientation: landscape) {
+    .statistics-report__range-dates {
+        margin-bottom: 1%;
+        font-size: .7rem;
+    }
+}
+
+@media(min-width:1024px) {
+    .statistics-report__range-dates {
+        margin-bottom: 1%;
+        font-size: .9rem;
+    }
+    .statistics-report__piggy-bank {
+        /* padding: .5%; */
+        font-size: 1.5rem;
+    }
+}
